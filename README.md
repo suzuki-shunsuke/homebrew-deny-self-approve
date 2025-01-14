@@ -1,0 +1,1 @@
+# homebrew-deny-self-approve
