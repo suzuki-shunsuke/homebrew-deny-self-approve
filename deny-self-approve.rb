@@ -6,21 +6,21 @@ class DenySelfApprove < Formula
   desc "Deny self-approved GitHub Pull Requests.
 "
   homepage "https://github.com/suzuki-shunsuke/deny-self-approve"
-  version "0.2.1"
+  version "0.2.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/suzuki-shunsuke/deny-self-approve/releases/download/v0.2.1/deny-self-approve_darwin_amd64.tar.gz"
-      sha256 "f4ef114576cb4902f12281a6a1534b027a2a026c51d08cbd128622fb28decaee"
+      url "https://github.com/suzuki-shunsuke/deny-self-approve/releases/download/v0.2.2/deny-self-approve_darwin_amd64.tar.gz"
+      sha256 "053c56411affbd136142cfd8e8eb5f5a7facb676d862d244f1d8a425fb868e85"
 
       def install
         bin.install "deny-self-approve"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/suzuki-shunsuke/deny-self-approve/releases/download/v0.2.1/deny-self-approve_darwin_arm64.tar.gz"
-      sha256 "3007b88f6166d334d1bc1fc4c7e6658cd784cd2ee944709b5dde855a0e7f88e6"
+      url "https://github.com/suzuki-shunsuke/deny-self-approve/releases/download/v0.2.2/deny-self-approve_darwin_arm64.tar.gz"
+      sha256 "1f723e0533895a8668585909242e8f99eb6a25a2dfc1d919caac29b0bc4e3e44"
 
       def install
         bin.install "deny-self-approve"
@@ -31,8 +31,8 @@ class DenySelfApprove < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/suzuki-shunsuke/deny-self-approve/releases/download/v0.2.1/deny-self-approve_linux_amd64.tar.gz"
-        sha256 "8f01e8d861e915017fee2b27476a958136f9023f6888bc761ff3a378dc967436"
+        url "https://github.com/suzuki-shunsuke/deny-self-approve/releases/download/v0.2.2/deny-self-approve_linux_amd64.tar.gz"
+        sha256 "1335d20398765284b7b6f550c2a2595c66851be119e045d1cf958d7897eea0f4"
 
         def install
           bin.install "deny-self-approve"
@@ -41,8 +41,8 @@ class DenySelfApprove < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/suzuki-shunsuke/deny-self-approve/releases/download/v0.2.1/deny-self-approve_linux_arm64.tar.gz"
-        sha256 "ef5cec1c639f8cfb1ba9937a7cd79df6a23b18a6f5d9d995a4bb95638e259aad"
+        url "https://github.com/suzuki-shunsuke/deny-self-approve/releases/download/v0.2.2/deny-self-approve_linux_arm64.tar.gz"
+        sha256 "4e114bdb74c5d72e935fc061f80612dd382c50a177c4e10070d12b42069b83d2"
 
         def install
           bin.install "deny-self-approve"
